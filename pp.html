@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: var(--bg-color, #f2f2f2);
+            color: var(--text-color, #333);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: var(--container-bg, #ffffff);
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--highlight-color, #4A90E2);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: var(--highlight-color, #4A90E2);
+        }
+
+        p, ul {
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background: var(--button-bg, #4A90E2);
+            color: var(--button-text, white);
+            font-size: 1rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 20px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        button:hover {
+            background: var(--button-hover-bg, #357ABD);
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: var(--footer-text, #777);
+            text-align: center;
+        }
+
+        .controls {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        :root {
+            --bg-color: #f2f2f2;
+            --text-color: #333;
+            --container-bg: #ffffff;
+            --highlight-color: #4A90E2;
+            --button-bg: #4A90E2;
+            --button-text: white;
+            --button-hover-bg: #357ABD;
+            --footer-text: #777;
+        }
+
+        .dark-mode {
+            --bg-color: #121212;
+            --text-color: #f2f2f2;
+            --container-bg: #1e1e1e;
+            --highlight-color: #ff6b6b;
+            --button-bg: #333;
+            --button-text: white;
+            --button-hover-bg: #555;
+            --footer-text: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </div>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p>
+            This Privacy Policy explains how we collect, use, and protect your personal information when you use our application or website. 
+            By using our services, you agree to the terms outlined in this policy.
+        </p>
+        <h2>1. Information We Collect</h2>
+        <p>We may collect the following types of information:</p>
+        <ul>
+            <li>Personal Information: Name, email address, and contact details.</li>
+            <li>Usage Data: Information about how you use our application, including device type and IP address.</li>
+            <li>Cookies: Data stored in your browser to enhance your experience.</li>
+        </ul>
+
+        <h2>2. How We Use Your Information</h2>
+        <p>We use your information to:</p>
+        <ul>
+            <li>Provide and improve our services.</li>
+            <li>Respond to your queries and feedback.</li>
+            <li>Analyze usage trends for better functionality.</li>
+        </ul>
+
+        <h2>3. Sharing Your Information</h2>
+        <p>
+            We do not sell, rent, or share your personal information with third parties except in the following cases:
+        </p>
+        <ul>
+            <li>With your consent.</li>
+            <li>To comply with legal obligations.</li>
+            <li>To protect the rights and safety of our users.</li>
+        </ul>
+
+        <h2>4. Security</h2>
+        <p>
+            We take appropriate measures to protect your information from unauthorized access, alteration, or destruction. However, no system is completely secure, and we cannot guarantee the absolute security of your data.
+        </p>
+
+        <h2>5. Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+            <li>Access the information we hold about you.</li>
+            <li>Request corrections or deletions of your data.</li>
+            <li>Withdraw consent for data collection at any time.</li>
+        </ul>
+
+        <h2>6. Changes to This Policy</h2>
+        <p>
+            We may update this Privacy Policy from time to time. We encourage you to review it periodically to stay informed about our practices.
+        </p>
+
+        <h2>7. Contact Us</h2>
+        <p>
+            If you have any questions about this Privacy Policy, please contact us at: 
+            <a href="mailto: bujsobd@gmail.com">bujsobd@gmail.com</a>
+        </p>
+
+        <button onclick="goBack()">Go Back</button>
+
+        <footer>
+            © 2024 BUJSO. All rights reserved.
+        </footer>
+    </div>
+
+    <script>
+        function goBack() {
+            alert("Returning to the previous page...");
+            window.history.back();
+        }
+    
+        // Toggle Dark Mode
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
